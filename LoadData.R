@@ -23,11 +23,11 @@ if (!file.exists("~/PowerConsumption.csv")) {
   attach(data)
   
   
-  write.csv(data, file = "./data/PowerConsumption.csv", row.names = FALSE)
+  write.csv(data, file = "~/PowerConsumption.csv", row.names = FALSE)
 } else {
   
   
   # Read the Data to a data frame
-  data <- read.csv(file = "./data/PowerConsumption.csv", header = TRUE)
+  data <- read.csv(file = "~/PowerConsumption.csv", header = TRUE)
   attach(data)
 }
